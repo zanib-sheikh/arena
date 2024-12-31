@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/* Parallelogram Shape with Gradient and Opacity */
+/* Mirrored Parallelogram Shape with Gradient and Opacity */
+.clip-parallelogram-mirror {
+    background: linear-gradient(to bottom, rgb(16, 92, 36), rgba(90, 100, 0, 0)); /* Green to transparent */
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 85%); /* Creates mirrored parallelogram shape */
+    position: absolute;
+    top: 0; /* Start at the top of the screen */
+    right: 0; /* Start at the left of the screen */
+    width: 50%; /* Full width */
+    height: 100%; /* Full height */
+    z-index: 0; /* Places it above the background but below content like navbar or buttons */
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  
+  
+html {
+    scroll-behavior: smooth;
+  }
+  
